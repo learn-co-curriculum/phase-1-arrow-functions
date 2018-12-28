@@ -1,6 +1,5 @@
 # Arrow Function Shorthand
 
-
 ## Introduction
 
 The original style for declaring functions in JavaScript is the _function
@@ -19,7 +18,7 @@ and the _arrow function_. None of these is more correct or better than others.
 
 - Declare a function using a function expression
 - Declare a function using an arrow function
-- Describe situations where arrow functions come in handy
+- Describe situations where arrow functions are used
 
 ## Declare a Function Using a Function Expression
 
@@ -97,7 +96,7 @@ let add = (parameter1, parameter2) => parameter1 + parameter2
 add(2,3) //=> 5
 ```
 
-Yes, this works! Really! This builds on the syntax of the _function expression_
+It seems like it wouldn't work, but it does. This builds on the syntax of the _function expression_
 just covered. The arrow syntax just lets you cut out a some typing.
 
 `add` is the name to which the following _anonymous function_ is assigned, same
@@ -108,21 +107,22 @@ as in the previous section:
 ```
 
 This is a very short function! It adds `parameter1` and `parameter2`.  Without
-any braces, arrow functions **automatically** return the result of the last
+any braces, arrow functions automatically return the result of the last
 expression.
 
-Functions like this are very common in JavaScript's iterator methods that we'll
-cover in a future lesson.
+Functions like this are very common in JavaScript's iterator methods.
 
-As one final gift to programmers' fingers, if your arrow function has only
-_one_ parameter, JavaScript will let you drop the `()` around the parameter:
+If your arrow function has only one parameter, the `()` become optional around the parameter:
 
 ```js
 let twoAdder = x => x + 2;
+// is the same as
+let twoAdder = (x) => x + 2;
 ```
+Almost all developers will drop the parentheses in this case. 
 
 If we need to do more work than return a mere single expression, we'll need
-`{}` to wrap the multiple lines of code **and** we'll have to declare a
+`{}` to wrap the multiple lines of code, and we'll have to declare a
 `return`.
 
 ```js
@@ -134,12 +134,14 @@ let sum = (parameter1, parameter2) => {
 sum(1,2) //=> 3
 ```
 
-## Describe Situations Where Arrow Functions Come In Handy
+## Describe Situations Where Arrow Functions Are Used
 
 As a preview of advanced iteration in JavaScipt, we'll show the `.map()`
-function iterates through one `Array`, passes each element to a function that's
-passed in as an argument, takes that functions return value, and stacks it into
-a new array.
+function.  `.map()` iterates through one `Array`, passes each element to a
+function that's passed in as an argument, takes that functions return value, and
+stacks it into a new array. Don't worry if you don't completely follow
+everything that goes on here - we haven't covered iterators quite yet, so it's
+totally ok if the finer details feel a bit murky. 
 
 ```js
 const nums = [1,2,3];
@@ -147,8 +149,9 @@ const squares = nums.map(x => x ** 2); //=> [2,4,6]
 const doubles = nums.map(x => x * 2); //=> [1,4,9]
 ```
 
-If all this math stuff seems a bit too, textbook-y, realize that a similar
-pattern could be done with DOM elements:
+If all this math stuff seems a bit too textbook-y, be reassured that we can
+iterate through anything, not just numbers. We can do something similar with DOM
+elements:
 
 ```js
 finishedItems = overdueTodoItems.map( item => item.className = "complete" );
@@ -163,6 +166,12 @@ lapsedUserAccounts.map( u => sendBillTo(u.address) );
 
 In a subsequent lesson, we'll show the power of arrow functions with other
 iterator methods.
+
+## Instructions
+You are going to write several methods. Write your code in the `index.js` file. Let the tests guide you through the process. 
+
+
+
 
 ## Conclusion
 

@@ -1,23 +1,27 @@
-
-
-describe("index.html", () => {
-  it("includes 'hello'", () => {
-    expect(document.querySelector('body').innerHTML).to.include('hello')
-  })
-
-  it("includes div", () => {
-    expect(document.querySelector('body').innerHTML, "no empty div element found within body").to.include('<div></div>')
-  })
-
-
-})
-
-
 describe("index.js", () => {
-  it("exists", () => {
-    expect(testVar).to.exist
-    expect(testVar).to.deep.equal({}) //without .deep, {} does not equal {}
-    expect(testFunc).to.exist
-    expect(testFunc()).to.equal('hi')
+  it("has a functional expression called divide", () => {
+    expect(divide).to.exist
+  })
+  it("divide divides 2000 by 100", () => {
+    let x = 2
+    expect(divide).to.equal(20)
+  })
+  
+  it("has an arrow function called square", () => {
+    expect(square).to.exist
+  })
+  it("square arrow function multiplies a number times itself", () => {
+    let x = 2
+    expect(square(x)).to.equal(4)
+  })
+  // square multiplies x by itself
+
+  it("has an arrow function called add", () => {
+    expect(add).to.exist
+  })
+  it("add arrow function takes two parameters and adds them together", () => {
+    let a = 3
+    let b = 4
+    expect(add(a,b)).to.equal(a+b)
   })
 })
