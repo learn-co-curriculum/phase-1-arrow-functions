@@ -168,9 +168,8 @@ In a subsequent lesson, we'll show the power of arrow functions with other
 iterator methods.
 
 ## Instructions
-You are going to write several methods. Write your code in the `index.js` file. Let the tests guide you through the process. 
-
-
+You are going to write several methods. Write your code in the `index.js` file.
+Let the tests guide you through the process. 
 
 
 ## Conclusion
@@ -178,8 +177,10 @@ You are going to write several methods. Write your code in the `index.js` file. 
 In this lesson you saw two different styles for declaring functions: function
 expressions and arrow functions. Neither is "better" than the standard function
 declaration we've been using. Arrow functions excel when a simple change or
-opration needs to be used repeatedly. But they're certainly used to write long,
-full functions too!
+operation needs to be used repeatedly. But they're certainly used to write long,
+full functions too! As you continue through the course, you'll see all three
+methods used to write functions, and develop a sense of when to use each
+yourself. 
 
 ## Resources
 
