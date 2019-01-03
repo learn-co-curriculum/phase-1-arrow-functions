@@ -46,13 +46,13 @@ is is by analogy.
 let sum = 1 + 1
 ```
 
-EVALUATE the expression `1 + 1`, RETURNING `2` and ASSIGN it to the variable `sum`
+Evaluate the expression `1 + 1`, returning `2` and assign it to the variable `sum`
 
 ```js
 let difference = 10 - 1;
 ```
 
-EVALUATE the expression `10 - 1`, RETURNING `9` and ASSIGN it to the variable
+Evaluate the expression `10 - 1`, returning `9` and assign it to the variable
 `difference`.
 
 ```js
@@ -61,8 +61,8 @@ let foo = function() {
 }
 ```
 
-EVALUATE the expression `function() { return 'bar' }`, RETURNING a thing that
-can be called and ASSIGN it to the variable `foo`. The function expression
+Evaluate the expression `function() { return 'bar' }`, returning a thing that
+can be called and assign it to the variable `foo`. The function expression  
 (again, the thing to the right of `=`) is known as "an anonymous
 function." It doesn't have a name associated with it like you see in a
 _function declaration_.
@@ -79,7 +79,8 @@ than the other.
 
 Try thinking about the following code. Will this work? Does it work? Try to
 explain to yourself what's happening using the words "anonymous function" and
-"`call`." If you need help, see IIFE in the Resources section below.
+"`call`." If you need help, see [Immediately Invoked Function Expression][IIFE]
+in the Resources section below.
 
 ```js
 (function() { console.log("Hello world") })()
@@ -110,7 +111,10 @@ This is a very short function! It adds `parameter1` and `parameter2`.  Without
 any braces, arrow functions automatically return the result of the last
 expression.
 
-Functions like this are very common in JavaScript's iterator methods.
+Functions like this are very common in JavaScript's _iterator_ methods. An
+iterator is a method that allows you to deal with a set of data one at a time.
+For example, if you had a group of student's essays, you could only grade
+them one at a time. An iterator method would allow you to do just that. 
 
 If your arrow function has only one parameter, the `()` become optional around the parameter:
 
@@ -137,7 +141,7 @@ sum(1,2) //=> 3
 ## Describe Situations Where Arrow Functions Are Used
 
 As a preview of advanced iteration in JavaScipt, we'll show the `.map()`
-function.  `.map()` iterates through one `Array`, passes each element to a
+method.  `.map()` iterates through one `Array`, passes each element to a
 function that's passed in as an argument, takes that functions return value, and
 stacks it into a new array. Don't worry if you don't completely follow
 everything that goes on here - we haven't covered iterators quite yet, so it's
@@ -164,9 +168,6 @@ Or billing software:
 lapsedUserAccounts.map( u => sendBillTo(u.address) );
 ```
 
-In a subsequent lesson, we'll show the power of arrow functions with other
-iterator methods.
-
 ## Instructions
 You are going to write several methods. Write your code in the `index.js` file.
 Let the tests guide you through the process. 
@@ -183,6 +184,9 @@ methods used to write functions, and develop a sense of when to use each
 yourself. 
 
 ## Resources
+[MDN: Arrow Functions][Arrow functions]
+[IIFE][]
 
-- [MDN: Arrow functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
-- [IIFE](https://developer.mozilla.org/en-US/docs/Glossary/IIFE)
+
+- [Arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+- [IIFE]: https://developer.mozilla.org/en-US/docs/Glossary/IIFE
