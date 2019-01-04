@@ -12,7 +12,9 @@ function foo() {
 ```
 
 But JavaScript has two other ways to write functions: the _function expression_
-and the _arrow function_. None of these is more correct or better than others.
+and the _arrow function_. None of these is more correct or better than others,
+but learning to recognize the correct situation in which to use each is a useful
+skill for a programmer. 
 
 ## Learning Goals
 
@@ -74,8 +76,7 @@ reasonable purposes, named `foo`.
 
 There are a few subtle differences between _function declarations_ and
 _function expressions_, but they are very minute. Neither is really better than
-the other. JavaScript supports variety. Neither is better or more preferred
-than the other.
+the other. JavaScript supports variety, and you can use whichever one you prefer. 
 
 Try thinking about the following code. Will this work? Does it work? Try to
 explain to yourself what's happening using the words "anonymous function" and
