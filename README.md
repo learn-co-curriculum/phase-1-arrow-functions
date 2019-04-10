@@ -64,19 +64,19 @@ let foo = function() {
 ```
 
 Evaluate the expression `function() { return 'bar' }`, returning a thing that
-can be called and assign it to the variable `foo`. The function expression  
-(again, the thing to the right of `=`) is known as "an anonymous
-function." It doesn't have a name associated with it like you see in a
-_function declaration_.
+can be called and assign it to the variable `foo`. The function expression
+(again, the thing to the right of `=`) is known as "an anonymous function." It
+doesn't have a name associated with it like you see in a _function
+declaration_.
 
 However, when we assign an anonymous function to a name (that is, a variable),
-we have name that points to a callable thing. We could call this anonymous
+we have a name that points to a callable thing. We _could_ call this anonymous
 function by invoking `foo()`. That anonymous function is now, for all
 reasonable purposes, named `foo`.
 
 There are a few subtle differences between _function declarations_ and
 _function expressions_, but they are very minute. Neither is really better than
-the other. JavaScript supports variety, and you can use whichever one you prefer. 
+the other. JavaScript supports variety, and you can use whichever one you prefer.
 
 Try thinking about the following code. Will this work? Does it work? Try to
 explain to yourself what's happening using the words "anonymous function" and
@@ -98,37 +98,42 @@ let add = (parameter1, parameter2) => parameter1 + parameter2
 add(2,3) //=> 5
 ```
 
-It seems like it wouldn't work, but it does. This builds on the syntax of the _function expression_
-just covered. The arrow syntax just lets you cut out a some typing.
+It seems like it wouldn't work, but it does. This builds on the syntax of the
+_function expression_ just covered. The arrow syntax just lets you cut out a
+some typing.
 
-`add` is the name to which the following _anonymous function_ is assigned, same
-as in the previous section:
+First, add is the name of a variable to which an _anonymous function_ is
+assigned. Nothing new there. So, let's look to the right of the `=`.
 
 ```js
 (parameter1, parameter2) => parameter1 + parameter2
+// Parameter list ^^^^^   // Function Body ^^^^^^^^
 ```
 
-This is a very short function! It adds `parameter1` and `parameter2`.  Without
-any braces, arrow functions automatically return the result of the last
-expression.
+This is a very short function body! It adds `parameter1` and `parameter2`.
+Without any braces, arrow functions automatically return the result of the last
+expression. This recalls Ruby's _implicit return_ and is quite a departure for
+JavaScript which has always required _explicit return_ with the `return`
+keyword.
 
-Functions like this are very common in JavaScript's _iterator_ methods. An
-iterator is a method that allows you to deal with a set of data one at a time.
-For example, if you had a group of student's essays, you could only grade
-them one at a time. An iterator method would allow you to do just that. 
+The parameters that the function takes looks similar to what we would have done
+historically: list the parameters, separated by comma, inside of `()`.
 
-If your arrow function has only one parameter, the `()` become optional around the parameter:
+If your arrow function has only one parameter, the `()` become optional around
+the parameter:
 
 ```js
 let twoAdder = x => x + 2;
 // is the same as
 let twoAdder = (x) => x + 2;
 ```
-Almost all developers will drop the parentheses in this case. 
 
-If we need to do more work than return a mere single expression, we'll need
-`{}` to wrap the multiple lines of code, and we'll have to declare a
-`return`.
+Almost all developers will drop the parentheses in this case.
+
+If we need to do more work than return a single expression, we'll need `{}` to
+wrap the multiple lines of code, **and** we'll have to declare a `return`. That
+sweet no-`return` syntax is only available if your function body is one
+expression long.
 
 ```js
 let sum = (parameter1, parameter2) => {
@@ -141,12 +146,17 @@ sum(1,2) //=> 3
 
 ## Describe Situations Where Arrow Functions Are Used
 
-As a preview of advanced iteration in JavaScipt, we'll show the `.map()`
+Using arrow functions often appears when using JavaScript's _iterator_ methods.
+An iterator is a method that allows you to deal with a set of data one at a
+time.  For example, if you had a group of student's essays, you could only
+grade them one at a time. An iterator method would allow you to do just that.
+
+As a preview of advanced iteration in JavaScript, we'll show the `.map()`
 method.  `.map()` iterates through one `Array`, passes each element to a
-function that's passed in as an argument, takes that functions return value, and
-stacks it into a new array. Don't worry if you don't completely follow
+function that's passed in as an argument, takes that functions return value,
+and stacks it into a new array. Don't worry if you don't completely follow
 everything that goes on here - we haven't covered iterators quite yet, so it's
-totally ok if the finer details feel a bit murky. 
+totally OK if the finer details feel a bit murky.
 
 ```js
 const nums = [1,2,3];
@@ -170,8 +180,9 @@ lapsedUserAccounts.map( u => sendBillTo(u.address) );
 ```
 
 ## Instructions
+
 You are going to write several methods. Write your code in the `index.js` file.
-Let the tests guide you through the process. 
+Let the tests guide you through the process.
 
 
 ## Conclusion
@@ -182,11 +193,12 @@ declaration we've been using. Arrow functions excel when a simple change or
 operation needs to be used repeatedly. But they're certainly used to write long,
 full functions too! As you continue through the course, you'll see all three
 methods used to write functions, and develop a sense of when to use each
-yourself. 
+yourself.
 
 ## Resources
-[MDN: Arrow Functions][Arrow functions]
-[IIFE][]
+
+* [MDN: Arrow Functions][Arrow functions]
+* [IIFE][]
 
 
 - [Arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
