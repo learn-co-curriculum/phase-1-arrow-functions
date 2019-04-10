@@ -14,7 +14,7 @@ function foo() {
 But JavaScript has two other ways to write functions: the _function expression_
 and the _arrow function_. None of these is more correct or better than others,
 but learning to recognize the correct situation in which to use each is a useful
-skill for a programmer. 
+skill for a programmer.
 
 ## Learning Goals
 
