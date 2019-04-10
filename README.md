@@ -201,5 +201,5 @@ yourself.
 * [IIFE][]
 
 
-- [Arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
-- [IIFE]: https://developer.mozilla.org/en-US/docs/Glossary/IIFE
+[Arrow functions]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions
+[IIFE]: https://developer.mozilla.org/en-US/docs/Glossary/IIFE
