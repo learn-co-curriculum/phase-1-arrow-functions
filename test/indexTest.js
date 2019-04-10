@@ -4,7 +4,6 @@ describe("index.js", () => {
   })
 
   it("divide divides 2000 by 100", () => {
-    let x = 2
     expect(divide()).to.equal(20)
   })
 
