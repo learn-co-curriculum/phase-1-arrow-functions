@@ -160,8 +160,8 @@ totally OK if the finer details feel a bit murky.
 
 ```js
 const nums = [1,2,3];
-const squares = nums.map(x => x ** 2); //=> [2,4,6]
-const doubles = nums.map(x => x * 2); //=> [1,4,9]
+const squares = nums.map(x => x ** 2); //=> [1,4,9]
+const doubles = nums.map(x => x * 2); //=> [2,4,6]
 ```
 
 If all this math stuff seems a bit too textbook-y, be reassured that we can
