@@ -1,5 +1,11 @@
 # Arrow Function Shorthand
 
+## Learning Goals
+
+- Declare a function using a function expression
+- Declare a function using an arrow function
+- Describe situations where arrow functions are used
+
 ## Introduction
 
 The original style for declaring functions in JavaScript is the _function
@@ -16,11 +22,6 @@ and the _arrow function_. None of these is more correct or better than others,
 but learning to recognize the correct situation in which to use each is a useful
 skill for a programmer.
 
-## Learning Goals
-
-- Declare a function using a function expression
-- Declare a function using an arrow function
-- Describe situations where arrow functions are used
 
 ## Declare a Function Using a Function Expression
 
@@ -42,7 +43,7 @@ let foo = function() {
 
 The `function() {...}` to the right of the assignment operator (`=`) is called
 a _function expression_. The best way to understand what a function expression
-is is by analogy.
+is by analogy.
 
 ```js
 let sum = 1 + 1
@@ -148,14 +149,14 @@ sum(1,2) //=> 3
 
 Using arrow functions often appears when using JavaScript's _iterator_ methods.
 An iterator is a method that allows you to deal with a set of data one at a
-time.  For example, if you had a group of student's essays, you could only
+time.  For example, if you had a group of students' essays, you could only
 grade them one at a time. An iterator method would allow you to do just that.
 
 As a preview of advanced iteration in JavaScript, we'll show the `.map()`
 method.  `.map()` iterates through one `Array`, passes each element to a
-function that's passed in as an argument, takes that functions return value,
+function that's passed in as an argument, takes that function's return value,
 and stacks it into a new array. Don't worry if you don't completely follow
-everything that goes on here - we haven't covered iterators quite yet, so it's
+everything that goes on here — we haven't covered iterators quite yet, so it's
 totally OK if the finer details feel a bit murky.
 
 ```js
