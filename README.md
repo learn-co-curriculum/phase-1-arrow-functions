@@ -3,7 +3,7 @@
 ## Learning Goals
 
 - Review declaring a function using a function expression
-- Declare a function using an arrow function
+- Declare a function using arrow syntax
 - Describe situations where arrow functions are used
 
 ## Introduction
@@ -14,7 +14,7 @@ _function expression_ and the _arrow function_. In this lesson, we will start by
 briefly reviewing function expressions, then we will learn how to write
 functions using _arrow syntax_.
 
-## Declaring a Function Using a Function Expression
+## Review: Declare a Function Using a Function Expression
 
 The first method we learned for defining a function is the _function
 declaration_:
@@ -41,7 +41,8 @@ analogy.
 const sum = 1 + 1
 ```
 
-Evaluate the expression `1 + 1`, returning `2`, and assign it to the variable `sum`
+Evaluate the expression `1 + 1`, returning `2`, and assign it to the variable
+`sum`.
 
 ```js
 const difference = 10 - 1;
@@ -63,10 +64,10 @@ We've also learned that the function expression (again, the thing to the right
 of `=`) is known as an _anonymous function_. It doesn't have a name associated
 with it like you see in a _function declaration_.
 
-However, when we assign an anonymous function to a name (that is, a variable),
-we have a name that points to a callable thing. We can call this anonymous
-function by invoking `foo()`. That anonymous function is now, for all
-reasonable purposes, named `foo`.
+However, when we assign an anonymous function to a variable, we have a name that
+points to a callable thing. We can call this anonymous function by invoking
+`foo()`. That anonymous function is now, for all practical purposes, named
+`foo`.
 
 There are a few subtle differences between _function declarations_ and _function
 expressions_, but they are very minute. Neither is really better than the other.
@@ -98,8 +99,8 @@ value. Nothing new there. So, let's look to the right of the `=`.
 This is a very short function body! It adds `parameter1` and `parameter2`. There
 are a couple of things to be aware of in the code above: first, note that if the
 function body consists of a single expression, we no longer need to wrap it in
-curly braces. Second, **when there are no braces**, arrow functions have an
-_implicit_ return, i.e., they _automatically_ return the result of the last
+curly braces. Second, **when there are no braces, arrow functions have an
+_implicit_ return**, i.e., they _automatically_ return the result of the last
 expression! **This is the only situation in which a JavaScript function doesn't
 require _explicit return_ with the `return` keyword.**
 
@@ -160,7 +161,7 @@ nums; //=> [1,2,3]
 Note that the argument being passed to `map` above is an arrow function! In each
 iteration through the `nums` array, `map` passes the value of the current
 element to the arrow function as an argument and it is assigned to the parameter
-`x`. That value is then squared and stored into a new array. After `map` has
+`x`. That value is then squared and stored in a new array. After `map` has
 iterated through all of the elements, it returns the new array containing the
 squared values.
 
