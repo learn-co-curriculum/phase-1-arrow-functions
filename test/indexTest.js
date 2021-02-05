@@ -1,5 +1,5 @@
 describe("index.js", () => {
-  it("has a functional expression called divide", () => {
+  it("has a function expression called divide", () => {
     expect(divide).to.exist
   })
 
@@ -11,7 +11,7 @@ describe("index.js", () => {
     expect(square).to.exist
   })
 
-  it("square arrow function multiplies a number times itself", () => {
+  it("square arrow function takes one parameter and multiplies it times itself", () => {
     let x = 2
     expect(square(x)).to.equal(4)
   })
