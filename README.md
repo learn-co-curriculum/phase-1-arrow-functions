@@ -10,9 +10,10 @@
 
 The original style for defining functions in JavaScript is the _function
 declaration_. But JavaScript has two other ways to write functions: the
-_function expression_ and the _arrow function_. In this lesson, we will start by
-briefly reviewing function expressions, then we will learn how to write
-functions using _arrow syntax_.
+_function expression_ and the _arrow function expression_ (often simply
+called an _arrow function_). In this lesson, we will start by briefly
+reviewing function expressions, then we will learn how to write functions
+using _arrow syntax_.
 
 ## Review: Declare a Function Using a Function Expression
 
