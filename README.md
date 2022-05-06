@@ -89,18 +89,19 @@ const add = (parameter1, parameter2) => parameter1 + parameter2;
 add(2,3); //=> 5
 ```
 
-First, we declare a variable `add` and assign an _anonymous function_ as its
-value. Nothing new there. So, let's look to the right of the `=`.
+Here, we're declaring a variable `add` and assigning an _anonymous function_ as
+its value. Let's look to the right of the `=`:
 
 ```js
 (parameter1, parameter2) => parameter1 + parameter2;
 // Parameter list ^^^^^   // Function Body ^^^^^^^^
 ```
 
-This is a very short function body! It adds `parameter1` and `parameter2`. There
-are a couple of things to be aware of in the code above: first, note that if the
-function body consists of a single expression, we no longer need to wrap it in
-curly braces. Second, **when there are no braces, arrow functions have an
+This is a very short function body! It adds `parameter1` and `parameter2`.
+
+There are a couple of things to be aware of in the code above: first, note that
+if the function body consists of a single expression, we no longer need to wrap
+it in curly braces. Second, **when there are no braces, arrow functions have an
 _implicit_ return**, i.e., they _automatically_ return the result of the last
 expression! **This is the only situation in which a JavaScript function doesn't
 require _explicit return_ with the `return` keyword.**
