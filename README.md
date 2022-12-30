@@ -15,6 +15,13 @@ called an _arrow function_). In this lesson, we will start by briefly
 reviewing function expressions, then we will learn how to write functions
 using _arrow syntax_.
 
+## Getting Started
+
+If you haven't already, fork and clone this lab into your local environment.
+Remember to **fork** a copy into your GitHub account first, then **clone** from
+that copy. Navigate into its directory in the terminal, then run `code .` to
+open the files in Visual Studio Code.
+
 ## Review: Declare a Function Using a Function Expression
 
 The first method we learned for defining a function is the _function
@@ -188,7 +195,9 @@ will cover advanced iterators in detail later in this section.
 ## Instructions
 
 You are going to write several methods. Write your code in the `index.js` file.
-Let the tests guide you through the process.
+Let the tests guide you through the process. Once the tests are passing,
+remember to commit and push your changes up to GitHub, then submit your work to
+Canvas using CodeGrade.
 
 ## Conclusion
 
