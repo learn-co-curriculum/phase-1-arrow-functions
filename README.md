@@ -2,9 +2,8 @@
 
 ## Learning Goals
 
-- Review declaring a function using a function expression
-- Declare a function using arrow syntax
-- Describe situations where arrow functions are used
+- Declare a function using arrow syntax.
+- Write an arrow function with an implicit return.
 
 ## Introduction
 
@@ -98,14 +97,14 @@ optional:
 ```js
 const multiplyByTwo = (x) => 2 * x;
 // is the same as
-const multiplyByTwo = (x) => 2 * x;
+const multiplyByTwo = x => 2 * x;
 ```
 
 This doesn't just apply for single line expressions, full-bodied arrow functions
 can utilize this feature as well.
 
 ```js
-const multiplyByTwo = (x) => {
+const multiplyByTwo = x => {
   console.log(`Multiplying ${x} by 2`);
   return 2 * x;
 };
